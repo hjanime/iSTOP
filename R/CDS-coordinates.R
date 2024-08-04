@@ -214,16 +214,16 @@ CDS_Scerevisiae_UCSC_sacCer3 <- function() {
 
 #' @rdname CDS
 #' @export
-CDS_Athaliana_BioMart_plantsmart28 <- function() {
+CDS_Athaliana_BioMart_plantsmart51 <- function() {
   require_bioc_install(
-    require   = c('TxDb.Athaliana.BioMart.plantsmart28', 'org.At.tair.db'),
+    require   = c('TxDb.Athaliana.BioMart.plantsmart51', 'org.At.tair.db'),
     recommend = 'BSgenome.Athaliana.TAIR.TAIR9'
   )
 
   message('Gathering CDS coordinates for all transcripts in Athaliana BioMart TAIR9 plantsmart28...')
 
   CDS_from_Bioconductor(
-    txdb    = TxDb.Athaliana.BioMart.plantsmart28::TxDb.Athaliana.BioMart.plantsmart28,
+    txdb    = TxDb.Athaliana.BioMart.plantsmart51::TxDb.Athaliana.BioMart.plantsmart51,
     orgdb   = org.At.tair.db::org.At.tair.db,
     gene_id = 'TAIR',
     fix_chr = function(.) { # Chromosome names in TxDb do not match BSGenome
