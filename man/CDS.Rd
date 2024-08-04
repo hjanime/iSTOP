@@ -10,7 +10,7 @@
 \alias{CDS_Mmusculus_UCSC_mm10}
 \alias{CDS_Rnorvegicus_UCSC_rn6}
 \alias{CDS_Scerevisiae_UCSC_sacCer3}
-\alias{CDS_Athaliana_BioMart_plantsmart28}
+\alias{CDS_Athaliana_BioMart_plantsmart51}
 \title{Generate a CDS coordinates table}
 \usage{
 CDS(tx, gene, tx_cols, gene_cols, shift_start = 1L, shift_end = 0L)
